@@ -161,6 +161,10 @@ while True:
         message_score_rect = message_score.get_rect(center=(400,320))
         screen.blit(game_name,game_name_rect)
         
+        version = font_test.render("Alpha - 0.5",False,(255,255,255))
+        version_rect = version.get_rect(center=(100,380))
+        screen.blit(version,version_rect)
+        
         if score == 0:
             screen.blit(game_message,game_message_rect)
         else:
